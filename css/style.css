@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  color: #fff;
   background: #fff;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 a {
-  color: #db8529;
+  color: #ffcc66;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -731,6 +731,13 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   #fh5co-gallery-list li.one-third {
     width: 49%;
+  }
+  #fh5co-gallery-list li.fadeshow {
+    display: none;
+  }
+  #largeImage {
+    max-width: 80%;
+    max-height: 80%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1840,4 +1847,23 @@ form label {
   opacity: 0;
 }
 
+.image-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+.image-container img {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  scroll-margin-top: 10px
+}
 /*# sourceMappingURL=style.css.map */
