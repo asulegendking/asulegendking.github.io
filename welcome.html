@@ -86,8 +86,9 @@
                                    }
                                });
                            }
+                           const recTrue = location.href.indexOf('?rec=1') != -1;
+                           recTrue === true ? document.write('<div class="text-center col-md-4 col-sm-4">') : document.write('<div class="text-center col-md-6 col-sm-6">');
                        </script>
-                       <div class="text-center col-md-6 col-sm-6">
                            <div class="animate-box event-wrap">
                               <h3>Reception</h3>
                               <div class=event-col><i class=icon-clock></i> <span>4:30 PM</span><span>8:00 PM</span></div>
@@ -97,7 +98,7 @@
                               <p><a href="https://maps.app.goo.gl/Q1Nt49D8QT31TLCG7">Open With Maps</a>
                            </div>
                         </div>
-                        <div class="text-center col-md-6 col-sm-6">
+                        <script>recTrue === true ? document.write('<div class="text-center col-md-4 col-sm-4">') : document.write('<div class="text-center col-md-6 col-sm-6">');</script>
                            <div class="animate-box event-wrap">
                               <h3>Muhurtham</h3>
                               <div class=event-col><i class=icon-clock></i> <span>7:30 AM</span> <span>8:10 AM</span></div>
@@ -107,17 +108,57 @@
                               <p><a href="https://maps.app.goo.gl/Q1Nt49D8QT31TLCG7">Open With Maps</a>
                            </div>
                         </div>
-                        <div class="animate-box col-md-3 col-sm-6">
-                           <div class=feature-center><span class=icon><a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Wedding:+Karthik+and+Aishwarya&details=Venue:%20Sri%20Srinivas%20Gardens,%20Kusugal%20Rd,%20Suncity%20Layout,%20Keshwapur,%20Hubballi,%20Karnataka%20580023,%20India+&dates=20240620T073000/20240620T130000&location=Hubli,+Karnataka,+India"><i class=icon-calendar></i> </a></span><span class=counter-label>Add to Calendar</span></div>
+                        <script>
+                           if (recTrue)
+                           {
+                              document.write('<div class="text-center col-md-4 col-sm-4"><div class="animate-box event-wrap"><h3>Reception</h3><div class=event-col><i class=icon-clock></i><span>5:30 PM</span><span>8:00 PM</span></div><div class=event-col><i class=icon-calendar></i><span>Monday 24</span><span>June, 2024</span></div><p>&nbsp&nbsp&nbsp</p><p>Venue: RDR Convention Centre, Edapazhanji, Trivandrum, Kerala 695014, India<p><a href="https://maps.app.goo.gl/k6gP3k5GZG6Cwibn6">Open With Maps</a></div></div>');
+                           }
+                        </script>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="display-t">
+                  <div class="display-tc">
+                     <div class="col-md-3 col-sm-6 animate-box">
+                        <div class="feature-center">
+                           <span class="icon">
+                              <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Wedding:+Karthik+and+Aishwarya&details=Venue:%20Sri%20Srinivas%20Gardens,%20Kusugal%20Rd,%20Suncity%20Layout,%20Keshwapur,%20Hubballi,%20Karnataka%20580023,%20India+&dates=20240620T073000/20240620T130000&location=Hubli,+Karnataka,+India">
+                              <i class="icon-calendar"></i>
+                              </a>
+                           </span>
+                           <span class="counter-label">Add to Calendar</span>
                         </div>
-                        <div class="animate-box col-md-3 col-sm-6">
-                           <div class=feature-center><span class=icon><a href="https://www.google.com/travel/flights?q=Flights%20to%20HBX%20on%202024-06-19%20through%202024-06-20"><i class=icon-paper-plane></i> </a></span><span class=counter-label>Travel Options</span></div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 animate-box">
+                        <div class="feature-center">
+                           <span class="icon">
+                              <a href="https://www.google.com/travel/flights?q=Flights%20to%20HBX%20on%202024-06-19%20through%202024-06-20">
+                              <i class="icon-paper-plane"></i>
+                              </a>
+                           </span>
+                           <span class="counter-label">Travel Options</span>
                         </div>
-                        <div class="animate-box col-md-3 col-sm-6">
-                           <div class=feature-center><span class=icon><a href="https://www.bing.com/travel/hotel-search?q=hotels+in+hubli%2C+karnataka%2C+india&loc=Hubli%2C+Karnataka%2C+India&cin=2024-06-19&cout=2024-06-20&guests=2A0C&age=&displaytext=Hubli%2C+Karnataka%2C+India&id=&index=0&form=HOTHTL&type=hotel&minprice=undefined&maxprice=undefined&lat=15.4239&lon=75.2685&entrypoint=UNKHUB&StarRating=,4,5,3&UserRating=,4&sort=Popularity"><i class=icon-home></i> </a></span><span class=counter-label>Accomodation</span></div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 animate-box">
+                        <div class="feature-center">
+                           <span class="icon">
+                              <a href="https://www.bing.com/travel/hotel-search?q=hotels+in+hubli%2C+karnataka%2C+india&loc=Hubli%2C+Karnataka%2C+India&cin=2024-06-19&cout=2024-06-20&guests=2A0C&age=&displaytext=Hubli%2C+Karnataka%2C+India&id=&index=0&form=HOTHTL&type=hotel&minprice=undefined&maxprice=undefined&lat=15.4239&lon=75.2685&entrypoint=UNKHUB&StarRating=,4,5,3&UserRating=,4&sort=Popularity">
+                              <i class="icon-home"></i>
+                              </a>
+                           </span>
+                           <span class="counter-label">Accomodation</span>
                         </div>
-                        <div class="animate-box col-md-3 col-sm-6">
-                           <div class=feature-center><span class=icon><a href="https://www.google.com/search?q=hubli+karnataka+attractions&sca_esv=596768218&ei=V-ecZZLKGffu0PEP8_m2sAY&ved=0ahUKEwjS0fbH1s-DAxV3NzQIHfO8DWYQ4dUDCBA&uact=5&oq=hubli+karnataka+attractions&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2h1YmxpIGthcm5hdGFrYSBhdHRyYWN0aW9uczIIECEYoAEYwwRI-BVQ9gdY5hNwAXgBkAEAmAFjoAHtBaoBAjEwuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAAGIAEGA3CAggQABgIGB4YDcICCxAAGIAEGIoFGIYDwgIKECEYChigARjDBOIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ttdcs=EAE"><i class=icon-basecamp></i> </a></span><span class=counter-label>Attractions</span></div>
+                     </div>
+                     <div class="col-md-3 col-sm-6 animate-box">
+                        <div class="feature-center">
+                           <span class="icon">
+                              <a href="https://www.google.com/search?q=hubli+karnataka+attractions&sca_esv=596768218&ei=V-ecZZLKGffu0PEP8_m2sAY&ved=0ahUKEwjS0fbH1s-DAxV3NzQIHfO8DWYQ4dUDCBA&uact=5&oq=hubli+karnataka+attractions&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2h1YmxpIGthcm5hdGFrYSBhdHRyYWN0aW9uczIIECEYoAEYwwRI-BVQ9gdY5hNwAXgBkAEAmAFjoAHtBaoBAjEwuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAAGIAEGA3CAggQABgIGB4YDcICCxAAGIAEGIoFGIYDwgIKECEYChigARjDBOIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ttdcs=EAE">
+                              <i class="icon-basecamp"></i>
+                              </a>
+                           </span>
+                           <span class="counter-label">Attractions</span>
                         </div>
                      </div>
                   </div>
@@ -129,7 +170,6 @@
          <div class=container>
             <div class=row>
                <div class="animate-box col-md-8 col-md-offset-2 fh5co-heading text-center">
-                  <span>Gallery</span>
                   <h2>Our Story</h2>
                   <p><i>"Once upon a time, we swiped right."</i>
                </div>
@@ -156,7 +196,7 @@
           <div class=row>
              <div class="animate-box col-md-8 col-md-offset-2 fh5co-heading text-center">
                <h2>Tickled Treats ...</h2>
-               <p>“Our love is like a batch of freshly baked cookies—warm, gooey, and impossible to resist. So grab a cookie (or two) and savor the sweetness of our forever!” 🍪
+               <p>“Our love is like a batch of freshly baked cookies—warm, sweet and impossible to resist. So grab a cookie (or two) and savor the sweetness of our forever!” 🍪
              </div>
           </div>
           <div class="row row-bottom-padded-md">
